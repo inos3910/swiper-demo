@@ -1,0 +1,44 @@
+@use "../global" as *;
+
+.l-cover {
+  padding: 90px 0;
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  @include responsive(md) {
+  }
+  @include responsive(xl) {
+  }
+
+  h1{
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    @include responsive(md) {
+      font-size: 18px;
+    }
+    @include responsive(xl) {
+      font-size: 24px;
+    }
+  }
+
+  .swiper-slide{
+    img{
+      width: 100%;
+    }
+  }
+
+  ul{
+    li{
+      &:nth-child(n+2){
+        margin-top: 2em;
+      }
+    }
+  }
+
+  .back{
+    margin-top: 3em;
+    text-align: center;
+  }
+}

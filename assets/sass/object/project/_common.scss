@@ -1,0 +1,8 @@
+@use "../../global" as *;
+
+.p-common{
+  @include responsive(md) {
+  }
+  @include responsive(xl) {
+  }
+}
